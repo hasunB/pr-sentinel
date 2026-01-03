@@ -15,9 +15,9 @@ inputs:
     description: 'Google Gemini API Key for summarization.'
     required: false
   model-name:
-    description: 'AI Model to use (default: gemini-1.5-flash).'
+    description: 'AI Model to use (default: gemini-2.5-flash-lite).'
     required: false
-    default: 'gemini-1.5-flash'
+    default: 'gemini-2.5-flash-lite'
 
 runs:
   using: 'node20'
