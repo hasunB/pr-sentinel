@@ -2,3 +2,5 @@ node_modules/
 lib/
 .env
 .DS_Store
+src/debug.ts
+src/list-model.ts
