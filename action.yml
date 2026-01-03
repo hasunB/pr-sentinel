@@ -1,0 +1,24 @@
+name: "PR Sentinel – AI & Rules Based PR Reviewer"
+description: "Enforces PR quality rules and auto-generates AI summaries"
+author: "Hasun Akash Bandara"
+
+branding:
+  icon: 'shield'
+  color: 'blue'
+
+inputs:
+  github-token:
+    description: 'GITHUB_TOKEN to read diffs and post comments.'
+    required: true
+    default: ${{ github.token }}
+  gemini-api-key:
+    description: 'Google Gemini API Key for summarization.'
+    required: false
+  model-name:
+    description: 'AI Model to use (default: gemini-1.5-flash).'
+    required: false
+    default: 'gemini-1.5-flash'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
