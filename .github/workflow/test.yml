@@ -1,0 +1,19 @@
+name: Test PR Sentinel
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run PR Sentinel
+        uses: ./ # This tells GitHub to use the action in the CURRENT folder
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # To test AI, you need to add this secret to your repo settings
+          # gemini-api-key: ${{ secrets.GEMINI_API_KEY }}
