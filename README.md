@@ -111,7 +111,7 @@ Note: Replaced legacy validation calls in src/utils.ts.
 | `gemini-api-key` | Google Gemini API Key. If provided, AI summary is generated. | No* | `""` |
 | `model-name` | AI Model to use. Supports gemini-1.5-flash or gemini-pro. | No | `gemini-2.5-flash-lite` |
 
-**Note**: If gemini-api-key is missing, the Action will still enforce rules but skip the AI summary.
+***Note**: If gemini-api-key is missing, the Action will still enforce rules but skip the AI summary.
 
 ### ❓ FAQ & Troubleshooting
 **Does this cost money?** No. Google Gemini's Free Tier allows 15 requests per minute free of charge. This is more than enough for most teams.
