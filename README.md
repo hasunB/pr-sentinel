@@ -80,7 +80,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run PR Sentinel
-        uses: hasunB/pr-sentinel@v1
+        uses: hasunB/pr-sentinel@v1.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           gemini-api-key: ${{ secrets.GEMINI_API_KEY }}
