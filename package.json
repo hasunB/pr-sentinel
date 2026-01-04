@@ -1,6 +1,6 @@
 {
   "name": "pr-sentinel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI &amp; Rules Based PR Reviewer - Enforces PR quality rules and auto-generates AI summaries",
   "main": "index.js",
   "scripts": {
